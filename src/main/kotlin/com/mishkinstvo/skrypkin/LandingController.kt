@@ -6,11 +6,10 @@ import org.springframework.web.bind.annotation.ResponseBody
 import org.springframework.web.bind.annotation.RequestMapping
 
 @Controller
-@RequestMapping("/")
 class LandingController {
 
-    @GetMapping
+    @GetMapping("")
     fun index() : String {
-        return "index.html"
+        return "index"
     }
 }
